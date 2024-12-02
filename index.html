@@ -1,199 +1,165 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VipaMx - Tu Estilo, Tu Comodidad</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Funnel de Ventas - VipaMx</title>
   <style>
+    /* Estilos generales */
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      background-color: #f4f4f4;
     }
-
-    .min-h-screen {
-      min-height: 100vh;
-    }
-
-    .bg-gradient-to-br {
-      background: linear-gradient(to bottom right, #4fa3e2, #74b9ff);
-    }
-
     .container {
-      width: 100%;
-      max-width: 1200px;
+      width: 80%;
       margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    .card {
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .card-content {
       padding: 20px;
     }
-
+    .text-center {
+      text-align: center;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .card-content {
+      padding: 10px;
+    }
     .button {
-      display: inline-block;
-      background-color: #00b894;
+      background-color: #4CAF50;
       color: white;
-      font-size: 1rem;
-      padding: 15px 25px;
+      padding: 15px 20px;
       text-align: center;
+      display: inline-block;
       width: 100%;
+      border-radius: 5px;
       cursor: pointer;
-      border-radius: 5px;
       text-decoration: none;
-      transition: background-color 0.3s ease;
+      font-size: 18px;
     }
-
-    .button:hover {
-      background-color: #00b2a9;
-    }
-
-    .input {
-      width: 100%;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 5px;
-      border: 1px solid #ddd;
-      font-size: 1rem;
-    }
-
-    .title {
-      text-align: center;
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: #2d3436;
-    }
-
-    .subtitle {
-      text-align: center;
-      font-size: 1.2rem;
-      color: #636e72;
-    }
-
-    .card-center {
-      text-align: center;
-    }
-
-    .space-y-6 > * {
-      margin-bottom: 24px;
-    }
-
-    .image-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #f2f2f2;
-      height: 250px;
-      margin-top: 20px;
-    }
-
     .image-container img {
-      max-width: 80%;
+      width: 100%;
       height: auto;
+      border-radius: 8px;
     }
-
-    .flex-center {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .contact-info {
+      background-color: #e8e8e8;
+      padding: 30px 0;
+      margin-top: 40px;
+    }
+    .contact-info h2 {
+      margin-bottom: 15px;
+    }
+    .contact-info p {
+      font-size: 18px;
+    }
+    .social-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
     }
   </style>
 </head>
-
 <body>
-  <div class="min-h-screen bg-gradient-to-br">
-    <div class="container">
-      <div id="index-page" class="card">
-        <div class="card-content space-y-6">
-          <h1 class="title">Descubre Tu Estilo Perfecto Con VipaMx</h1>
-          <p class="subtitle">¿Sabías que un buen calzado no solo mejora tu estilo, sino también tu bienestar? ¡Es momento de encontrar el calzado que se adapte a ti!</p>
-          <div class="image-container">
-            <img src="promo2_vipa.jpg" alt="VipaMx Shoes">
-          </div>
-          <a href="#main-page" class="button">Explora Nuestra Colección</a>
+
+<!-- Página de inicio -->
+<div class="container">
+  <div class="card">
+    <div class="card-content text-center">
+      <h1 class="text-4xl font-bold">¡Bienvenidos a VipaMx!</h1>
+      <p>Descubre el calzado que combina estilo, confort y diseño para todos.</p>
+      <div class="image-container">
+        <img src="vipamx-coleccion.jpg" alt="Colección de calzado VipaMx">
+      </div>
+      <a href="#main" class="button">Descubre la Colección</a>
+    </div>
+  </div>
+</div>
+
+<!-- Página principal -->
+<div id="main" class="container">
+  <div class="card">
+    <div class="card-content text-center">
+      <h2 class="text-3xl font-bold">Colección VipaMx</h2>
+      <p>VipaMx ofrece una variedad de calzado que se adapta a todos los estilos y necesidades.</p>
+      <div class="card" style="display: inline-block; width: 30%; margin: 10px;">
+        <div class="card-content text-center">
+          <h3>Estilo Inconfundible</h3>
+          <img src="/estilo-inconfundible.jpg" alt="Estilo VipaMx">
+          <p>Diseños modernos que se adaptan a tu estilo de vida.</p>
         </div>
       </div>
-
-      <div id="main-page" class="card" style="display:none;">
-        <div class="card-content space-y-6">
-          <h2 class="title">VipaMx: La Marca Que Revoluciona Tu Comodidad</h2>
-          <p class="subtitle">Con años de experiencia, en VipaMx diseñamos calzado que no solo te ofrece un look único, sino también la máxima comodidad para que te sientas bien todo el día.</p>
-          <div class="flex-center">
-            <div class="card" style="width: 30%; margin: 10px;">
-              <div class="card-content">
-                <h3 class="title">Estilo Inconfundible</h3>
-                <p>Diseños modernos que se adaptan a tu estilo de vida.</p>
-              </div>
-            </div>
-            <div class="card" style="width: 30%; margin: 10px;">
-              <div class="card-content">
-                <h3 class="title">Comodidad Todo el Día</h3>
-                <p>Materiales de calidad que brindan confort durante todo el día.</p>
-              </div>
-            </div>
-            <div class="card" style="width: 30%; margin: 10px;">
-              <div class="card-content">
-                <h3 class="title">Diseño para Todos</h3>
-                <p>Modelos exclusivos para cada personalidad.</p>
-              </div>
-            </div>
-          </div>
-          <a href="#capture-page" class="button">Compra Ahora y Encuentra Tu Par Ideal</a>
+      <div class="card" style="display: inline-block; width: 30%; margin: 10px;">
+        <div class="card-content text-center">
+          <h3>Comodidad Todo el Día</h3>
+          <img src="comodidad-dia.jpg" alt="Comodidad de VipaMx">
+          <p>Materiales de calidad que brindan confort durante todo el día.</p>
         </div>
       </div>
-
-      <div id="capture-page" class="card" style="display:none;">
-        <div class="card-content space-y-6">
-          <h2 class="title">Agenda Tu Consulta Personalizada</h2>
-          <p class="subtitle">Nos gustaría ayudarte a elegir el calzado perfecto para ti. Completa el formulario y uno de nuestros expertos se pondrá en contacto contigo para ofrecerte las mejores opciones.</p>
-          <form action="#thank-you-page" method="POST">
-            <input type="text" class="input" name="nombre" placeholder="Tu Nombre" required>
-            <input type="email" class="input" name="email" placeholder="Tu Correo Electrónico" required>
-            <input type="tel" class="input" name="telefono" placeholder="Tu Teléfono" required>
-            <input type="text" class="input" name="interes" placeholder="Modelo de Calzado que te Interesa" required>
-            <button type="submit" class="button">Enviar</button>
-          </form>
+      <div class="card" style="display: inline-block; width: 30%; margin: 10px;">
+        <div class="card-content text-center">
+          <h3>Diseño para Todos</h3>
+          <img src="diseno-para-todos.jpg" alt="Diseño VipaMx">
+          <p>Modelos exclusivos para cada personalidad.</p>
         </div>
       </div>
+      <a href="#captura" class="button">Compra Ahora</a>
+    </div>
+  </div>
+</div>
 
-      <div id="thank-you-page" class="card" style="display:none;">
-        <div class="card-content space-y-6">
-          <h2 class="title">¡Gracias por Tu Interés!</h2>
-          <p class="subtitle">Nos pondremos en contacto contigo en breve para ayudarte a encontrar el calzado perfecto para ti. ¡Te esperamos con los mejores modelos de VipaMx!</p>
-          <div class="flex-center">
-            <img src="vipa_logo.jpg" alt="vipa_logo.jpg" style="width: 80px; height: auto;">
-          </div>
-        </div>
+<!-- Página de captura -->
+<div id="captura" class="container">
+  <div class="card">
+    <div class="card-content text-center">
+      <h2 class="text-2xl font-bold">Reserva tu Par de Zapatos</h2>
+      <form action="gracias.html" method="POST">
+        <input type="text" placeholder="Nombre completo" required class="input">
+        <input type="email" placeholder="Correo electrónico" required class="input">
+        <input type="tel" placeholder="Teléfono" required class="input">
+        <button type="submit" class="button">Confirmar Compra</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Sección de información sobre VipaMx -->
+<div class="contact-info container text-center">
+  <h2>Sobre VipaMx</h2>
+  <p>VipaMx es una marca de calzado mexicana fabricada en León, Guanajuato. Nuestro objetivo es poner en alto el nombre de México brindando comodidad, moda, precios competitivos y alegría con cada uno de nuestros pares.</p>
+  <h3>¡Síguenos en Instagram!</h3>
+  <div class="social-links">
+    <a href="https://www.instagram.com/vipamx/" target="_blank">Instagram</a>
+  </div>
+  <h3>Categorías</h3>
+  <ul>
+    <li><a href="#damas">Dama</a></li>
+    <li><a href="#caballeros">Caballero</a></li>
+    <li><a href="#mini">Mini Vipamx</a></li>
+    <li><a href="#descuentos">Descuentos</a></li>
+  </ul>
+  <p>¿Quieres ser distribuidor? ¡Contáctanos!</p>
+  <p><strong>Correo:</strong> <a href="mailto:vipamx@hotmail.com">vipamx@hotmail.com</a></p>
+  <p><strong>Teléfono:</strong> <a href="tel:+524776765759">477-676-5759</a></p>
+</div>
+
+<!-- Página de agradecimiento -->
+<div id="thanks" class="container">
+  <div class="card">
+    <div class="card-content text-center">
+      <h2 class="text-3xl font-bold">¡Gracias por tu compra!</h2>
+      <p>Nos pondremos en contacto contigo en las próximas 24 horas para confirmar tu pedido.</p>
+      <div class="image-container">
+        <img src="vipamx-logo.jpg" alt="Logo de VipaMx">
       </div>
     </div>
   </div>
+</div>
 
-  <script>
-    // Script for handling page transitions
-    document.querySelector('.button').addEventListener('click', function () {
-      document.getElementById('index-page').style.display = 'none';
-      document.getElementById('main-page').style.display = 'block';
-    });
-
-    document.querySelectorAll('.button')[1].addEventListener('click', function () {
-      document.getElementById('main-page').style.display = 'none';
-      document.getElementById('capture-page').style.display = 'block';
-    });
-
-    document.querySelector('.button').addEventListener('click', function () {
-      document.getElementById('capture-page').style.display = 'none';
-      document.getElementById('thank-you-page').style.display = 'block';
-    });
-  </script>
 </body>
-
 </html>
